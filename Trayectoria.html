@@ -3,126 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <title>Trayectoria | Iván Torres El Chiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Iván Torres "El Chiki"</h1>
+<header class="bg-dark text-white py-3">
+    <div class="container">
+        <h1 class="text-center">Iván Torres "El Chiki"</h1>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Trayectoria.html">Trayectoria</a></li>
-            <li><a href="Obra.html">Obras y participaciones</a></li>
-            <li><a href="VisioAudicion.html">VisioAudición</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-            <li><a href="Agradecimientos.html">Agradecimientos</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menú principal">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">El Chiki</a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuNav"
+                        aria-controls="menuNav"
+                        aria-expanded="false"
+                        aria-label="Abrir o cerrar menú de navegación">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Trayectoria.html">Trayectoria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Obra.html">Obras y participaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="VisioAudicion.html">VisioAudición</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Agradecimientos.html">Agradecimientos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
 
-<main>
+<main class="container my-5">
 
-<section>
-    <h2>Camino musical</h2>
+    <!-- Camino musical -->
+    <section class="mb-5">
+        <h2 class="mb-4 text-center">Camino musical</h2>
 
-    <video controls preload="metadata" width="100%">
-        <source src="/Chiki-Pagina-Accesible/Videos/Musico.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de video.
-    </video>
+        <div class="row align-items-center">
 
-    <p>
-        La trayectoria de Iván Torres “El Chiki” es una mezcla de emociones,
-        rebeldía, reflexión y pasión. Cada escenario recorrido ha dejado huella
-        en su música, construyendo una identidad auténtica donde la trova y el rock
-        se encuentran sin pedir permiso.
+            <div class="col-md-6 mb-4">
+                <video controls preload="metadata" class="w-100"
+                       aria-label="Video sobre la trayectoria musical de Iván Torres El Chiki">
+                    <source src="/Chiki-Pagina-Accesible/Videos/Musico.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+
+            <div class="col-md-6">
+                <p>
+                    La trayectoria de Iván Torres “El Chiki” es una mezcla de emociones,
+                    rebeldía, reflexión y pasión. Cada escenario recorrido ha dejado huella
+                    en su música, construyendo una identidad auténtica donde la trova y el rock
+                    se encuentran sin pedir permiso.
+                </p>
+
+                <img src="/Chiki-Pagina-Accesible/Imagenes/001ChikiTrensas.jpg"
+                     class="img-fluid mt-3"
+                     alt="Iván Torres El Chiki con su característico estilo de trenzas">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Festivales -->
+    <section class="mb-5">
+        <h2 class="mb-4 text-center">Festivales y eventos</h2>
+
+        <ul class="list-group">
+            <li class="list-group-item">Festival Mecha, Pólvora y Fuego (Tultepec)</li>
+            <li class="list-group-item">Feria Internacional de la Música (Toluca)</li>
+            <li class="list-group-item">Víbora Fest</li>
+            <li class="list-group-item">Quema de Judas</li>
+            <li class="list-group-item">Festival Rock and Roll</li>
+            <li class="list-group-item">Día Internacional de la Guitarra</li>
+            <li class="list-group-item">Festival Intercultural</li>
+            <li class="list-group-item">Espacio de Torearte</li>
+            <li class="list-group-item">Festival Santa Cecilia 2024</li>
+            <li class="list-group-item">Festival Calaveras y Muertitos 2025</li>
+        </ul>
+    </section>
+
+    <!-- Discografía -->
+    <section class="mb-5">
+        <h2 class="mb-4 text-center">Discografía</h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered text-center">
+                <caption class="visually-hidden">
+                    Tabla con los álbumes publicados por Iván Torres El Chiki
+                </caption>
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Álbum</th>
+                        <th scope="col">Estilo</th>
+                        <th scope="col">Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mis influencias y un café</td>
+                        <td>Trova Rock</td>
+                        <td>2016</td>
+                    </tr>
+                    <tr>
+                        <td>Emociones rotas</td>
+                        <td>Trova Rock</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>La mente artificial del corazón</td>
+                        <td>Multigénero</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Incongruente</td>
+                        <td>Trova Rock</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>El caminar de mi esencia</td>
+                        <td>En vivo</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>Tres tiempos una voz</td>
+                        <td>Maquetas de autoras</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>Locuras</td>
+                        <td>Rap y parodia</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>Del Trova al Rock and Roll</td>
+                        <td>Rock urbano</td>
+                        <td>2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <p class="text-center fw-bold">
+        Orgullosamente llamado el "Poeta Urbano del Pueblo"
     </p>
-
-    <img src="/Chiki-Pagina-Accesible/Imagenes/001ChikiTrensas.jpg"
-         alt="Iván Torres El Chiki con su característico estilo de trenzas">
-</section>
-
-<section>
-    <h2>Festivales y eventos</h2>
-    <ul>
-        <li>Festival Mecha, Pólvora y Fuego (Tultepec)</li>
-        <li>Feria Internacional de la Música (Toluca)</li>
-        <li>Víbora Fest</li>
-        <li>Quema de Judas</li>
-        <li>Festival Rock and Roll</li>
-        <li>Día Internacional de la Guitarra</li>
-        <li>Festival Intercultural</li>
-        <li>Espacio de Torearte</li>
-        <li>Festival Santa Cecilia 2024</li>
-        <li>Festival Calaveras y Muertitos 2025</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Discografía</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Álbum</th>
-                <th>Estilo</th>
-                <th>Año</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Mis influencias y un café</td>
-                <td>Trova Rock</td>
-                <td>2016</td>
-            </tr>
-            <tr>
-                <td>Emociones rotas</td>
-                <td>Trova Rock</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <td>La mente artificial del corazón</td>
-                <td>Multigénero</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>Incongruente</td>
-                <td>Trova Rock</td>
-                <td>2025</td>
-            </tr>
-            <tr>
-                <td>El caminar de mi esencia</td>
-                <td>En vivo</td>
-                <td>2025</td>
-            </tr>
-            <tr>
-                <td>Tres tiempos una voz</td>
-                <td>Maquetas de autoras</td>
-                <td>2025</td>
-            </tr>
-            <tr>
-                <td>Locuras</td>
-                <td>Rap y parodia</td>
-                <td>2021</td>
-            </tr>
-            <tr>
-                <td>Del Trova al Rock and Roll</td>
-                <td>Rock urbano</td>
-                <td>2022</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-<p>Orgullosamente llamado el "Poeta Urbano del Pueblo"</p>
 
 </main>
 
-<footer>
+<footer class="bg-dark text-white text-center py-3">
     <p>Iván Guadalupe Torres Vargas</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

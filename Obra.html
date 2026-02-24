@@ -4,124 +4,167 @@
     <meta charset="UTF-8">
     <title>Obra | Iván Torres El Chiki</title>
     <meta name="description" content="Obra musical, participaciones y proyectos de Iván Torres El Chiki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Iván Torres "El Chiki"</h1>
+<header class="bg-dark text-white py-3">
+    <div class="container">
+        <h1 class="text-center">Iván Torres "El Chiki"</h1>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Trayectoria.html">Trayectoria</a></li>
-            <li><a href="Obra.html">Obras y participaciones</a></li>
-            <li><a href="VisioAudicion.html">VisioAudición</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-            <li><a href="Agradecimientos.html">Agradecimientos</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menú principal">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">El Chiki</a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuNav"
+                        aria-controls="menuNav"
+                        aria-expanded="false"
+                        aria-label="Abrir o cerrar menú de navegación">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Trayectoria.html">Trayectoria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Obra.html">Obras y participaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="VisioAudicion.html">VisioAudición</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Agradecimientos.html">Agradecimientos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
 
-<main>
+<main class="container my-5">
 
-<section>
-    <h2>Obra musical</h2>
+    <!-- Obra musical -->
+    <section class="mb-5">
+        <h2 class="mb-4 text-center">Obra musical</h2>
 
-    <img src="/Chiki-Pagina-Accesible/Imagenes/010ChikiStaCecilia.jpg"
-         alt="Iván El Chiki de regreso a los escenarios">
+        <img src="/Chiki-Pagina-Accesible/Imagenes/010ChikiStaCecilia.jpg"
+             class="img-fluid mb-4"
+             alt="Iván El Chiki de regreso a los escenarios">
 
-    <div class="flex-contenido">
+        <div class="row">
 
-        <div class="columna">
-            <h3>Canciones emblemáticas</h3>
-            <ul>
-                <li>Chica Explosiva – Mujeres pólvora en Tultepec</li>
-                <li>Desconfía – FT Adrián El Choco</li>
-                <li>Voy a cantar – FT Mictlán Rockstros</li>
-                <li>El viejo feo – FT DLirio Azteka</li>
-                <li>No tengas miedo – FT Nala Roque</li>
-                <li>Ese lugar – Homenaje a San Pablito</li>
-                <li>Tes yeux – Primera canción en francés</li>
-                <li>Te abandonó – Reconocimiento internacional</li>
-                <li>Legomaníacos – Promesa desde el hospital</li>
-                <li>Dime tú – Seleccionada por Plumaje Urbano</li>
-                <li>Calladito – Cumbia colaborativa</li>
-            </ul>
+            <div class="col-md-6 mb-4">
+                <h3>Canciones emblemáticas</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Chica Explosiva – Mujeres pólvora en Tultepec</li>
+                    <li class="list-group-item">Desconfía – FT Adrián El Choco</li>
+                    <li class="list-group-item">Voy a cantar – FT Mictlán Rockstros</li>
+                    <li class="list-group-item">El viejo feo – FT DLirio Azteka</li>
+                    <li class="list-group-item">No tengas miedo – FT Nala Roque</li>
+                    <li class="list-group-item">Ese lugar – Homenaje a San Pablito</li>
+                    <li class="list-group-item">Tes yeux – Primera canción en francés</li>
+                    <li class="list-group-item">Te abandonó – Reconocimiento internacional</li>
+                    <li class="list-group-item">Legomaníacos – Promesa desde el hospital</li>
+                    <li class="list-group-item">Dime tú – Seleccionada por Plumaje Urbano</li>
+                    <li class="list-group-item">Calladito – Cumbia colaborativa</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <h3>Eventos relevantes</h3>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Cinco participaciones en Mecha, Pólvora y Fuego</li>
+                    <li class="list-group-item">Entrevista en Radio Mexiquense FM</li>
+                    <li class="list-group-item">Rock Fest en Teyahualco</li>
+                    <li class="list-group-item">Entrevista con Doc Pirotecnia</li>
+                    <li class="list-group-item">Concha acústica de Tultepec</li>
+                </ol>
+            </div>
+
         </div>
+    </section>
 
-        <div class="columna">
-            <h3>Eventos relevantes</h3>
-            <ol>
-                <li>Cinco participaciones en Mecha, Pólvora y Fuego</li>
-                <li>Entrevista en Radio Mexiquense FM</li>
-                <li>Rock Fest en Teyahualco</li>
-                <li>Entrevista con Doc Pirotecnia</li>
-                <li>Concha acústica de Tultepec</li>
-            </ol>
+    <!-- Proyectos -->
+    <section class="mb-5">
+        <h2 class="mb-4 text-center">Proyectos a futuro</h2>
+        <p>Desarrollo de un nuevo álbum de estudio, consolidando una nueva etapa creativa.</p>
+        <p>Integración de músicos completamente en vivo, fortaleciendo el rock urbano mexicano.</p>
+        <p>Participación en eventos culturales, privados y tocadas independientes.</p>
+    </section>
+
+    <!-- Estudios -->
+    <section class="mb-5">
+        <h2 class="mb-4 text-center">Estudios de grabación</h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered text-center">
+                <caption class="visually-hidden">
+                    Tabla con estudios de grabación y tipo de producción
+                </caption>
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Estudio</th>
+                        <th scope="col">Producción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Estudios independientes</td>
+                        <td>Panda Music – Discos y sencillos</td>
+                    </tr>
+                    <tr>
+                        <td>IZE Records Chiki</td>
+                        <td>Home studio y producción creativa</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </section>
 
-    </div>
-</section>
+    <!-- Opinión -->
+    <section class="mb-5">
+        <h2 class="mb-4 text-center">¿Tú qué opinas?</h2>
+        <p>
+            La música no entiende de límites. Es verdad, emoción y corazón convertido en sonido.
+        </p>
+    </section>
 
-<section>
-    <h2>Proyectos a futuro</h2>
-    <p>
-        Desarrollo de un nuevo álbum de estudio, consolidando una nueva etapa creativa.
-    </p>
-    <p>
-        Integración de músicos completamente en vivo, fortaleciendo el rock urbano mexicano.
-    </p>
-    <p>
-        Participación en eventos culturales, privados y tocadas independientes.
-    </p>
-</section>
+    <!-- Video -->
+    <section class="mb-5">
+        <h2 class="mb-4 text-center">Participación en Caminemos Juntos</h2>
 
-<section>
-    <h2>Estudios de grabación</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Estudio</th>
-                <th>Producción</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Estudios independientes</td>
-                <td>Panda Music – Discos y sencillos</td>
-            </tr>
-            <tr>
-                <td>IZE Records Chiki</td>
-                <td>Home studio y producción creativa</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-<section>
-    <h2>¿Tú qué opinas?</h2>
-    <p>
-        La música no entiende de límites. Es verdad, emoción y corazón convertido en sonido.
-    </p>
-</section>
-
-<section>
-    <h3>Participación en Caminemos Juntos</h3>
-
-    <video controls preload="metadata" width="100%" aria-label="Participación en el evento Caminemos Juntos">
-        <source src="/Chiki-Pagina-Accesible/Videos/TresAcordes.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de video.
-    </video>
-</section>
+        <video controls preload="metadata" class="w-100"
+               aria-label="Participación en el evento Caminemos Juntos">
+            <source src="/Chiki-Pagina-Accesible/Videos/TresAcordes.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </section>
 
 </main>
 
-<footer>
+<footer class="bg-dark text-white text-center py-3">
     <p>Iván Guadalupe Torres Vargas</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
