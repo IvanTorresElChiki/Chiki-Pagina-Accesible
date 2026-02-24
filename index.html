@@ -4,69 +4,139 @@
     <meta charset="UTF-8">
     <title>Iván Torres El Chiki</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Iván Torres "El Chiki"</h1>
+<header class="bg-dark text-white py-3">
+    <div class="container">
+        <h1 class="text-center">Iván Torres "El Chiki"</h1>
 
-    <nav aria-label="Menú principal">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Trayectoria.html">Trayectoria</a></li>
-            <li><a href="Obra.html">Obras y participaciones</a></li>
-            <li><a href="VisioAudicion.html">VisioAudición</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-            <li><a href="Agradecimientos.html">Agradecimientos</a></li>
-        </ul>
-    </nav>
+        <!-- Navbar Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">El Chiki</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Trayectoria.html">Trayectoria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Obra.html">Obras y participaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="VisioAudicion.html">VisioAudición</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Agradecimientos.html">Agradecimientos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
 
-<main>
-    <h2>Para que me conozcan</h2>
+<main class="container my-5">
 
-    <section>
-        <video controls preload="metadata" width="100%">
-            <source src="Videos/ChikiTikTok.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-        </video>
-    </section>
+    <!-- Carrusel -->
+    <div id="carruselChiki" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-    <section>
-        <h2>Música que nace del alma</h2>
+            <div class="carousel-item active">
+                <img src="/Chiki-Pagina-Accesible/Imagenes/01LogoOriginal.jpg"
+                     class="d-block w-100"
+                     alt="Logo oficial de Iván Torres El Chiki">
+            </div>
 
-        <img src="/Chiki-Pagina-Accesible/Imagenes/01LogoOriginal.jpg"
-     alt="Logo oficial de Iván Torres El Chiki">
+            <div class="carousel-item">
+                <img src="/Chiki-Pagina-Accesible/Imagenes/01LogoOriginal.jpg"
+                     class="d-block w-100"
+                     alt="Logo oficial de Iván Torres El Chiki">
+            </div>
 
-        <p>
-            Iván Torres “El Chiki” es un cantautor mexicano que fusiona la trova con el rock and roll,
-            creando canciones cargadas de emociones, historias reales y una identidad muy personal.
-        </p>
+            <div class="carousel-item">
+                <img src="/Chiki-Pagina-Accesible/Imagenes/01LogoOriginal.jpg"
+                     class="d-block w-100"
+                     alt="Logo oficial de Iván Torres El Chiki">
+            </div>
 
-        <p>
-            Con discapacidad múltiple (ceguera y amputación de pierna), esto no ha sido impedimento
-            para continuar su recorrido musical y generar cercanía con su público.
-        </p>
+        </div>
 
-        <p>
-            En esta página encontrarás parte de su biografía para conocer más sobre él y su obra.
-        </p>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselChiki" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselChiki" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
 
-        <p>
-            Esta experiencia está pensada para ser visual, auditiva y accesible
-            para toda la comunidad.
-        </p>
+    <h2 class="mb-4 text-center">Para que me conozcan</h2>
 
-        <p><strong>BIENVENIDOS</strong></p>
-    </section>
+    <!-- Sección en columnas -->
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <video controls preload="metadata" class="w-100">
+                <source src="Videos/ChikiTikTok.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+
+        <div class="col-md-6">
+            <h3>Música que nace del alma</h3>
+
+            <img src="/Chiki-Pagina-Accesible/Imagenes/01LogoOriginal.jpg"
+                 class="img-fluid mb-3"
+                 alt="Logo oficial de Iván Torres El Chiki">
+
+            <p>
+                Iván Torres “El Chiki” es un cantautor mexicano que fusiona la trova con el rock and roll,
+                creando canciones cargadas de emociones, historias reales y una identidad muy personal.
+            </p>
+
+            <p>
+                Con discapacidad múltiple (ceguera y amputación de pierna), esto no ha sido impedimento
+                para continuar su recorrido musical y generar cercanía con su público.
+            </p>
+
+            <p>
+                En esta página encontrarás parte de su biografía para conocer más sobre él y su obra.
+            </p>
+
+            <p>
+                Esta experiencia está pensada para ser visual, auditiva y accesible
+                para toda la comunidad.
+            </p>
+
+            <p><strong>BIENVENIDOS</strong></p>
+        </div>
+
+    </div>
+
 </main>
 
-<footer>
+<footer class="bg-dark text-white text-center py-3">
     <p>Iván Guadalupe Torres Vargas</p>
 </footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
- 
