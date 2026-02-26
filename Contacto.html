@@ -4,128 +4,116 @@
     <meta charset="UTF-8">
     <title>Contacto | Iván Torres El Chiki</title>
     <meta name="description" content="Contacto y redes sociales de Iván Torres El Chiki">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<header class="mb-4 bg-light p-3">
-    <h1 class="text-center">Iván Torres "El Chiki"</h1>
-    <nav class="text-center mb-3" aria-label="Menú de navegación principal">
-        <a class="btn btn-outline-primary m-1" href="index.html">Inicio</a>
-        <a class="btn btn-outline-primary m-1" href="Trayectoria.html">Trayectoria</a>
-        <a class="btn btn-outline-primary m-1" href="Obra.html">Obras</a>
-        <a class="btn btn-outline-primary m-1" href="VisioAudicion.html">VisioAudición</a>
-        <a class="btn btn-primary m-1" href="Contacto.html">Contacto</a>
-        <a class="btn btn-outline-primary m-1" href="Agradecimientos.html">Agradecimientos</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Iván Torres "El Chiki"</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Obra.html">Obras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="VisioAudicion.html">VisioAudición</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Agradecimientos.html">Agradecimientos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 
-<main class="container">
+<main class="container my-5">
 
-    <!-- Video -->
-    <section class="mb-4">
-        <h2>Forma parte de esta gran familia</h2>
-        <video controls width="100%" aria-label="Video de Redes Sociales de Iván Torres El Chiki">
-            <source src="Videos/RedesSociales.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-        </video>
-    </section>
+    <h1 class="text-center mb-4">Página de Contacto</h1>
 
-    <!-- Contacto general -->
-    <section class="mb-4">
-        <h2>Contacto</h2>
-        <p>
-            Gracias por apoyar la música independiente. Si te ha gustado el contenido, suscríbete a mis redes, deja tu “me gusta” y algún comentario. Para eventos, colaboraciones o entrevistas, contáctame.
-        </p>
-    </section>
+    <section class="mb-5">
+        <h2>Formulario de contacto</h2>
 
-    <!-- Redes sociales -->
-    <section class="mb-4">
-        <h2>Redes sociales</h2>
-        <ul>
-            <li><a href="https://youtube.com/@ivantorreselchiki7820?si=aJ6itFHJk5v9tM0D" target="_blank">YouTube – Iván Torres El Chiki</a></li>
-            <li><a href="https://www.tiktok.com/@ivanelchiki88?_r=1&_t=ZS-92FTakKHJDN" target="_blank">TikTok – ivanelchiki88</a></li>
-            <li><a href="https://www.facebook.com/share/1Vsqf2LBYS/" target="_blank">Facebook – Iván Torres El Chiki</a></li>
-        </ul>
-    </section>
+        <!-- FORMULARIO SIN FUNCIONALIDAD -->
+        <form>
 
-    <!-- Correo electrónico -->
-    <section class="mb-4">
-        <h2>Correo electrónico</h2>
-        <p>Para contacto directo, puedes escribir al siguiente correo:</p>
-        <p><a href="mailto:terp.torvar.88@gmail.com">terp.torvar.88@gmail.com</a></p>
-    </section>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
 
-    <!-- FORMULARIO DE CONTACTO ACCESIBLE -->
-    <section class="mb-4" aria-labelledby="contacto-form">
-        <h2 id="contacto-form">Envíame un mensaje</h2>
-        <form action="https://formspree.io/f/mzdayvve" method="POST" class="needs-validation" novalidate>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre completo</label>
-                <input type="text" class="form-control" id="nombre" name="name" required aria-required="true" placeholder="Tu nombre">
-                <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                <div class="col-md-6 mb-3">
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" placeholder="Ingresa tus apellidos">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="genero" class="form-label">Género</label>
+                    <select class="form-select" id="genero">
+                        <option selected disabled>Selecciona una opción</option>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Número telefónico">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="motivo" class="form-label">Motivo de contacto</label>
+                    <input type="text" class="form-control" id="motivo" placeholder="Escribe el motivo">
+                </div>
             </div>
 
             <div class="mb-3">
-                <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="correo" name="_replyto" required aria-required="true" placeholder="tu@correo.com">
-                <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
 
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" name="message" rows="5" required aria-required="true" placeholder="Escribe tu mensaje aquí"></textarea>
-                <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
         </form>
-    </section>
-
-    <!-- Pensamiento -->
-    <section class="mb-4">
-        <h2>Pensamiento</h2>
-        <p>
-            La música conecta, sana y transforma. Gracias por formar parte de esta gran familia de Iván Torres El "Chiki" y creer en este camino musical. Me despido con mi frase: ¡Cuchaooo!!
-        </p>
-    </section>
-
-    <!-- Descarga discografía -->
-    <section class="mb-4">
-        <h2>Descarga mi discografía</h2>
-        <p>Si deseas escuchar y conservar mi música, aquí puedes descargar la discografía actualizada de <strong>Iván Torres El Chiki</strong>.</p>
-        <p><a href="https://drive.google.com/drive/folders/13GIb3ppaAE0Xa8PZB3-YgFwtasRd_9UR" target="_blank">📥 Descargar discografía completa (Google Drive)</a></p>
     </section>
 
 </main>
 
-<footer class="text-center py-3 bg-light">
+<footer class="bg-light text-center py-3">
     <p>Iván Guadalupe Torres Vargas</p>
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-// Validación básica de Bootstrap
-(() => {
-  'use strict'
-  const forms = document.querySelectorAll('.needs-validation')
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-      }
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-</script>
 
 </body>
 </html>
