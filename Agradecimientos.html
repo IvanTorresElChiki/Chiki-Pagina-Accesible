@@ -4,88 +4,153 @@
     <meta charset="UTF-8">
     <title>Agradecimientos | Iván Torres El Chiki</title>
     <meta name="description" content="Pensamiento y agradecimientos de Iván Torres El Chiki">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Iván Torres "El Chiki"</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Iván Torres "El Chiki"</a>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Trayectoria.html">Trayectoria</a></li>
-            <li><a href="Obra.html">Obras y participaciones</a></li>
-            <li><a href="VisioAudicion.html">VisioAudición</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-            <li><a href="Agradecimientos.html">Agradecimientos</a></li>
-        </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Obra.html">Obras y participaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="VisioAudicion.html">VisioAudición</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Agradecimientos.html">Agradecimientos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 
-<main>
+<main class="container my-5">
 
-    <section>
-        <h2>Pensamiento</h2>
-        <p>
+    <!-- Pensamiento -->
+    <section class="mb-5 text-center">
+        <h1 class="mb-3">Pensamiento</h1>
+        <p class="lead">
             La vida es un camino de notas, silencios y aprendizajes.
             Cada paso, cada caída y cada aplauso forman la melodía
             que hoy puedo compartir contigo.
         </p>
     </section>
 
-    <section>
+    <!-- Imagen religiosa -->
+    <section class="text-center mb-5">
         <img src="Imagenes/011NiñoPalomitas.jpg"
+             class="img-fluid rounded shadow"
              alt="Imagen del Santo Niño de las Palomitas de Tultepec">
     </section>
 
-    <section>
-        <h2>Agradecimientos</h2>
+    <!-- Agradecimientos en Cards -->
+    <section class="mb-5">
+        <h2 class="text-center mb-4">Agradecimientos</h2>
+        <h3 class="text-center mb-4">Corazón bendecido con</h3>
 
-        <h3>Corazón bendecido con</h3>
+        <div class="row g-4">
 
-        <p>
-            <strong>Dios nuestro Señor y el Niñito Jesús de las Palomitas:</strong><br>
-            Gracias por la vida, por la fuerza en los momentos difíciles
-            y por permitirme expresar mi fe, mis emociones y mi verdad
-            a través de la música.
-        </p>
+            <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Dios nuestro Señor y el Niñito Jesús de las Palomitas</h5>
+                        <p class="card-text">
+                            Gracias por la vida, por la fuerza en los momentos difíciles
+                            y por permitirme expresar mi fe, mis emociones y mi verdad
+                            a través de la música.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <p>
-            <strong>Familia:</strong><br>
-            Gracias por el amor incondicional, por creer en mí incluso
-            cuando el camino parecía incierto, y por ser el refugio
-            donde siempre encuentro paz.
-        </p>
+            <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Familia</h5>
+                        <p class="card-text">
+                            Gracias por el amor incondicional, por creer en mí incluso
+                            cuando el camino parecía incierto, y por ser el refugio
+                            donde siempre encuentro paz.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <p>
-            <strong>Amigos:</strong><br>
-            Gracias por caminar a mi lado, por las risas, los consejos
-            y por acompañarme en cada etapa de esta historia musical.
-        </p>
+            <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Amigos</h5>
+                        <p class="card-text">
+                            Gracias por caminar a mi lado, por las risas, los consejos
+                            y por acompañarme en cada etapa de esta historia musical.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <p>
-            <strong>Músicos:</strong><br>
-            Gracias por compartir talento, escenario y corazón.
-            Cada nota tocada juntos es parte viva de este proyecto.
-        </p>
+            <div class="col-md-6">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Músicos</h5>
+                        <p class="card-text">
+                            Gracias por compartir talento, escenario y corazón.
+                            Cada nota tocada juntos es parte viva de este proyecto.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <p>
-            <strong>Fans:</strong><br>
-            Gracias por escuchar, sentir y hacer suyas mis canciones.
-            Ustedes son la razón por la que la música sigue latiendo.
-        </p>
+            <div class="col-md-12">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fans</h5>
+                        <p class="card-text">
+                            Gracias por escuchar, sentir y hacer suyas mis canciones.
+                            Ustedes son la razón por la que la música sigue latiendo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <section>
+    <!-- Imagen nota sonriente -->
+    <section class="text-center mb-5">
         <img src="Imagenes/009NotaSonriente.jpg"
+             class="img-fluid rounded shadow"
              alt="Ilustración de una nota musical sonriendo, símbolo de alegría y vida">
     </section>
 
-    <section>
-        <h2>Este soy yo</h2>
-        <p>
+    <!-- Este soy yo -->
+    <section class="mb-5 text-center">
+        <h2 class="mb-3">Este soy yo</h2>
+        <p class="lead">
             Mi vida sin música es como un corazón sin sangre.
             Si no suena mi guitarra, mi alma llora en silencio.
             Iván Torres “El Chiki” es música que complementa
@@ -93,16 +158,31 @@
         </p>
     </section>
 
-    <section>
+    <!-- Imagen final -->
+    <section class="text-center mb-4">
         <img src="Imagenes/009NotaSonriente.jpg"
+             class="img-fluid rounded shadow"
              alt="Representación gráfica del espíritu rockero de Iván Torres El Chiki">
+    </section>
+
+    <!-- Cierre emotivo -->
+    <section class="text-center mt-4">
+        <div class="alert alert-success">
+            Gracias por recorrer este sitio.  
+            Esto no es solo una tarea…  
+            es mi esencia convertida en código.  
+            ¡Cuchaooo!
+        </div>
     </section>
 
 </main>
 
-<footer>
+<footer class="bg-light text-center py-3">
     <p>Iván Guadalupe Torres Vargas</p>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
